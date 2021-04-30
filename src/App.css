@@ -10,8 +10,29 @@
 .Menu{
   display: flex;
   height: 300px;
-  width: 500px;
-  background-color:#9ADFD8;
+  width:  600px;
+  /* background-color:#9ADFD8; */
+  background-color: rgba(25, 141, 214, 0.82);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1ch;
+}
+
+.QuesAns{
+  display: flex;
+  height: 400px;
+  width: 700px;
+  background-color:rgba(90, 149, 214, 0.82);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1ch;
+}
+
+.EndScreen{
+  display: flex;
+  height: 400px;
+  width: 700px;
+  background-color:#0CCFBB;
   flex-direction: column;
   align-items: center;
   border-radius: 1ch;
@@ -58,6 +79,42 @@
   margin-bottom: -10px;
   cursor: pointer;
   margin-bottom: 500px;
+
+}
+
+
+.QuesAns button {
+  background-color: #26AA31;
+  width: 250px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  color: azure;
+  cursor: pointer;
+
+}
+
+
+.QuesAns #nextButton {
+  background-color:tomato;
+  width: 250px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  color: azure;
+  cursor: pointer;
+
+}
+
+
+.QuesAns #finishButton {
+  background-color:red;
+  width: 250px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  color: azure;
+  cursor: pointer;
 
 }
 

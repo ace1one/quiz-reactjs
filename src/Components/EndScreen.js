@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import {QuizContext} from '../Helpers/Context'
 
 export const EndScreen = () => {
+    const {name,score} = useContext(QuizContext)
     return (
-        <div>
-            <h1>This is End Screen</h1>
+        <div className="EndScreen">
+            <h1></h1>
         </div>
     )
 }
