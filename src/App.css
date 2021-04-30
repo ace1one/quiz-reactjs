@@ -119,3 +119,29 @@
 }
 
 
+.EndScreen #quit {
+  background-color:red;
+  width: 250px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  color: azure;
+  cursor: pointer;
+
+}
+
+
+.EndScreen #again {
+  background-color:#26AA31;
+  width: 250px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  color: azure;
+  cursor: pointer;
+  float:left;
+  margin-right:20px;
+
+}
+
+

@@ -10,9 +10,16 @@ export const Quiz = () => {
     const nextQuestion= ()=>{
         if(Questions[currquestion].ans === ansChoose ){
             setScore(score+1)
+            setAnsChose("")
         }
         if(currquestion !==Questions.length -1 ){
-            setQuestion(currquestion +1)
+            if(ansChoose !==""){
+                setQuestion(currquestion +1)
+            }
+            else{
+                setQuestion(currquestion)
+            }
+           
         }
         else{
             setGameState("end")
@@ -33,7 +40,7 @@ export const Quiz = () => {
                 {Questions[currquestion].opt3}</button> <br></br>
             <button onClick={(e)=>setAnsChose("opt4")} >
                 {Questions[currquestion].opt4}</button> <br></br>
-           
+
          {currquestion ===Questions.length -1 ? <button id="finishButton" onClick={nextQuestion}>Finish</button>
          : <button id="nextButton" onClick={nextQuestion}>Next</button> }
            
